@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Displays all active IPv4 addresses using ifconfig to match the checker environment
+ifconfig | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
